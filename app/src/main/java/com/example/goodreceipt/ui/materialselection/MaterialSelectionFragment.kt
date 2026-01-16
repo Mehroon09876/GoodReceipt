@@ -112,8 +112,8 @@ class MaterialSelectionFragment : Fragment() {
             
             if (selectedIds.isNotEmpty()) {
                 val selectedMaterials = allMaterials.filter { selectedIds.contains(it.id) }
-                val detailsMessage = formatSelectedMaterialsDetails(selectedMaterials)
-                requireContext().showToast(detailsMessage)
+                val toastMessage = formatSelectedItemsForToast(selectedMaterials, allMaterials)
+                requireContext().showToast(toastMessage)
             }
         }
     }
@@ -141,6 +141,17 @@ class MaterialSelectionFragment : Fragment() {
     }
 
 
+
+    private fun formatSelectedItemsForToast(selectedMaterials: List<Material>, allMaterials: List<Material>): String {
+        if (selectedMaterials.isEmpty()) return ""
+        
+        val items = selectedMaterials.map { material ->
+            val originalIndex = allMaterials.indexOfFirst { it.id == material.id }
+            "$originalIndex: Name: ${material.name}, PONumber: ${material.poNumber}"
+        }
+        
+        return items.joinToString("\n")
+    }
 
     private fun formatSelectedMaterialsDetails(materials: List<Material>): String {
         if (materials.isEmpty()) return ""

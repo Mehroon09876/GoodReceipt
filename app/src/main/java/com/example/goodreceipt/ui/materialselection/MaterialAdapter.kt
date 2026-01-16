@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.goodreceipt.R
 import com.example.goodreceipt.data.model.Material
 import com.example.goodreceipt.databinding.ItemMaterialBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
+import java.util.Random
 
 class MaterialAdapter(
     private val materials: List<Material>,
@@ -48,6 +52,21 @@ class MaterialAdapter(
                 tvLocation.text = material.fullLocation
                 tvUnit.text = material.unit
                 tvQuantity.text = material.quantity.toString()
+
+                // Generate random values for PO Number, Vendor Number, and Delivery Date
+                val random = Random()
+                val randomPoNumber = "PO-${10000 + random.nextInt(90000)}-${('A'..'Z').random()}"
+                val randomVendorNumber = "VN-${1000 + random.nextInt(9000)}"
+                
+                // Generate random delivery date (within next 60 days)
+                val calendar = Calendar.getInstance()
+                calendar.add(Calendar.DAY_OF_YEAR, random.nextInt(60))
+                val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+                val randomDeliveryDate = dateFormat.format(calendar.time)
+                
+                tvPoNumber.text = "PO: $randomPoNumber"
+                tvVendorNumber.text = "VN: $randomVendorNumber"
+                tvDeliveryDate.text = "DD: $randomDeliveryDate"
 
                 tvQuantity.setTextColor(
                     ContextCompat.getColor(

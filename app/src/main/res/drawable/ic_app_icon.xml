@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    <!-- Rounded blue background -->
+    <path
+        android:fillColor="@color/accent_blue"
+        android:pathData="M8,0L56,0A8,8 0 0,1 64,8L64,56A8,8 0 0,1 56,64L8,64A8,8 0 0,1 0,56L0,8A8,8 0 0,1 8,0z"/>
+    <!-- White box outline -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M18,18L46,18L46,46L18,46z"
+        android:strokeWidth="2"
+        android:strokeColor="@color/white"
+        android:fillType="nonZero"/>
+    <!-- White lines inside box -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M22,26L42,26L42,28L22,28z"/>
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M22,32L42,32L42,34L22,34z"/>
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M22,38L36,38L36,40L22,40z"/>
+</vector>

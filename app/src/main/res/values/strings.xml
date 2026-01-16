@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">GoodReceipt</string>
+    <string name="warehouse_management_system">Receipts Management System</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_description">Sign in to manage your Good Receipts</string>
+    <string name="email_address">Email Address</string>
+    <string name="email_hint">name@company.com</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="request_access">Sign Up</string>
+    <string name="version_info">VERSION 2.4.0 • ENTERPRISE EDITION</string>
+    
+    <!-- HomeFragment Strings -->
+    <string name="inventory_pro">INVENTORY PRO</string>
+    <string name="good_morning">Good Morning, %1$s</string>
+    <string name="north_distribution_center">Agra UP</string>
+    <string name="incoming_stock">INCOMING STOCK</string>
+    <string name="new_receipt">New Receipt</string>
+    <string name="new_receipt_description">Process incoming inventory and scan pallet barcodes</string>
+    <string name="gr_history">GR History</string>
+    <string name="gr_history_description">Review past entries</string>
+    <string name="sync_status">Sync Status</string>
+    <string name="last_synced">Last synced: %1$s</string>
+    <string name="logout">Logout</string>
+    <string name="logout_description">End active session</string>
+    <string name="support">Support</string>
+    <string name="support_description">Knowledge base</string>
+    <string name="recent_receipts">RECENT RECEIPTS</string>
+    <string name="view_all">View All</string>
+    <string name="completed">COMPLETED</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    
+    <!-- IdentifyItemFragment Strings -->
+    <string name="good_request">Good Request</string>
+    <string name="identify_item">Identify Item</string>
+    <string name="identify_item_description">Scan the barcode on the item or enter the 10-digit Good ID manually to proceed.</string>
+    <string name="good_id_number">GOOD ID NUMBER</string>
+    <string name="or">OR</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="next_step">Next Step</string>
+    
+    <!-- MaterialSelectionFragment Strings -->
+    <string name="material_selection">Material Selection</string>
+    <string name="search_by_name_or_sku">Search by name or SKU…</string>
+    <string name="all_materials">All Materials</string>
+    <string name="warehouse_a">Warehouse A</string>
+    <string name="in_stock">In Stock</string>
+    <string name="sku">SKU:</string>
+    <string name="unit">Unit:</string>
+    <string name="qty">Qty:</string>
+    <string name="gr">GR</string>
+    <string name="items_selected">Items Selected:</string>
+    <string name="review_before_finalizing">Review before finalizing</string>
+    <string name="review_gr_summary">Submit</string>
+    
+    <!-- Logout Dialog Strings -->
+    <string name="logout_confirmation_title">Logout</string>
+    <string name="logout_confirmation_message">Are you sure you want to logout?</string>
+    <string name="cancel">Cancel</string>
+</resources>
